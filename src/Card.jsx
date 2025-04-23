@@ -17,7 +17,11 @@ function Card() {
       alignItems: 'center',
       minHeight: '100vh', // key to vertical centering
       backgroundColor: '#121212' // optional background
+      ,marginLeft:'12rem'
+      ,marginTop:'3rem'
+      ,marginBottom:'3rem'
     }}
+
   >
     <div
       className="main"
@@ -37,7 +41,7 @@ function Card() {
         expertly roasted in small batches and shipped fresh weekly.
       </p>
   
-      <div className="btn" style={{ display: 'flex', gap: '10px', margin: '1rem 0' }}>
+      <div className="btn" style={{ display: 'flex', gap: '5px', margin: '1rem 0' }}>
         <button
           className="stylebtn"
           style={{
@@ -77,19 +81,22 @@ function Card() {
             key={index}
             style={{
               backgroundColor: '#2C2D2F',
-              padding: '1rem',
               borderRadius: '10px',
               color: 'white',
-              textAlign: 'center'
+              textAlign: 'center',
+              lineHeight:'5px'
             }}
           >
             <img
               src={card.img}
               alt={card.title}
-              style={{ height: '10rem', width: '13rem', borderRadius: '10px' }}
+              style={{ height: '6rem', width: '13rem', borderRadius: '10px' }}
             />
+            <div style={{display:'flex' ,justifyContent:'space-between'}}>
+
             <h2>{card.title}</h2>
             <p>₹{card.price}</p>
+            </div>
             <p>⭐ {card.rating}</p>
           </div>
         ))}
