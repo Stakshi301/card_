@@ -1,0 +1,11 @@
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+  background-image: url(https://i.pinimg.com/474x/92/fe/2d/92fe2ddc90cad3d25ca19bcb05e4306e.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
